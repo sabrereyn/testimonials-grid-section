@@ -28,12 +28,12 @@ Users should be able to:
 
 ### Screenshot
 
-![](images/Solution.jpg)
+![Screenshot](images/Solution.jpg)
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Repo](https://github.com/sabrereyn/testimonials-grid-section)
+- Live Site URL: [Live Site](https://sabrereyn.github.io/testimonials-grid-section/)
 
 ## My process
 
