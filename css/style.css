@@ -1,0 +1,148 @@
+body {
+	/* margin: 0; */
+	font-size: 13px;
+	font-family: 'Barlow Semi Condensed', sans-serif;
+	background-color: hsl(210, 46%, 95%);
+}
+
+h1 {
+	font-size: 15px;
+	margin: 0;
+}
+
+.attribution {
+	font-size: 11px;
+	text-align: center;
+}
+
+.attribution a {
+	color: hsl(228, 45%, 44%);
+}
+
+.container {
+	margin: 10% 10%;
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-template-rows: repeat(2, minmax(200px, auto));
+	column-gap: 2rem;
+	row-gap: 2rem;
+	grid-template-areas: 
+		"first first second fifth"
+		"third fourth fourth fifth";
+}
+
+.card {
+	padding: 2rem;
+	border-radius: 10px;
+}
+
+.card p {
+	margin-bottom: 0;
+	margin-top: 2%;
+	line-height: 1.5;
+}
+
+.card-profile {
+	display: flex;
+	align-items: center;
+}
+
+.card-profile-name {
+	margin-left: 5%;
+}
+
+.card-profile-name p {
+	line-height: normal;
+}
+
+.card-profile img{
+	width: auto;
+	border-radius: 50%;
+}
+
+.first-card {
+	background-color: hsl(263, 55%, 52%);
+	grid-area: first;
+	position: relative;
+}
+
+.first-card svg {
+	position: absolute;
+	z-index: 1;
+	right: 15%;
+	top: 0;
+}
+
+.first-card-content {
+	position: relative;
+	z-index: 2;
+}
+
+.second-card {
+	background-color: hsl(217, 19%, 35%);
+	grid-area: second;
+}
+
+.third-card {
+	background-color: hsl(0, 0%, 100%);
+	grid-area: third;
+}
+
+.fourth-card {
+	background-color: hsl(219, 29%, 14%);
+	grid-area: fourth;
+}
+
+.fifth-card {
+	grid-area: fifth;
+}
+
+.bg-white {
+	background-color: hsl(0, 0%, 100%);
+	box-shadow: 5px 10px 50px hsl(0, 0%, 81%);
+}
+
+.lgt h1, .lgt h2 {
+	color: hsl(0, 0%, 100%);
+}
+
+.lgt-verified {
+	color: hsla(0, 0%, 100%, 0.5);
+}
+
+.lgt-quote{
+	color: hsla(0, 0%, 100%, 0.7)
+}
+
+.drk h1, .drk h2 {
+	color: hsl(217, 19%, 35%);
+}
+
+.drk-verified {
+	color: hsla(217, 19%, 35%, 0.5);
+}
+
+.drk-quote {
+	color: hsla(217, 19%, 35%, 0.7);
+}
+
+@media screen and (max-width: 1024px) {
+	.container {
+		grid-template-columns: repeat(3, 1fr);
+		grid-template-areas: 
+			"first first second"
+			"third fourth fourth"
+			"fifth fifth fifth";
+	}
+}
+
+@media screen and (max-width: 426px) {
+	.container {
+		display: block;
+		margin: 15% 5% 10%;
+	}
+
+	.card {
+		margin-bottom: 1.5rem;
+	}
+}
